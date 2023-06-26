@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=IBM+Plex+Sans:wght@600&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Roboto&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: pink;
+}
+
+nav {
+    height: 12vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item, .hidden{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.slider-btns {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    visibility: hidden;
+}
+
+.slider-btns button {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+}
+
+.slide-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-main:hover .slider-btns {
+    visibility: visible;
+}
